@@ -376,7 +376,7 @@ body {
 }
 
 .parcours-buttons {
-    margin-bottom: 200px; /* Ajustez cette valeur pour augmenter ou diminuer l'espace */
+    margin-bottom: 150px; /* Ajustez cette valeur pour augmenter ou diminuer l'espace */
     display: flex;
     justify-content: center;
 }
