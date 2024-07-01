@@ -327,8 +327,10 @@ body {
 /* Styles spécifiques pour les rectangles dans la section "Parcours Professionnel" */
 .professionnel .rectangles-container {
     display: flex;
+    flex-wrap: wrap; /* Permet aux rectangles de s'empiler verticalement */
     gap: 20px; /* Espace entre les rectangles */
     justify-content: center;
+    margin-top: 20px;
 }
 
 .professionnel .pro-rectangle {
@@ -337,10 +339,12 @@ body {
     border-radius: 10px;
     padding: 20px;
     height: auto;
-    width: 800px; /* Augmentez cette valeur pour augmenter la longueur des rectangles */
+    width: calc(100% - 40px); /* Largeur 100% moins l'espace entre les rectangles */
+    max-width: 800px; /* Largeur maximale pour les écrans plus grands */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left; /* Optionnel, pour aligner le texte à gauche */
 }
+
 
 .professionnel .pro-rectangle h3 {
     margin-top: 0;
